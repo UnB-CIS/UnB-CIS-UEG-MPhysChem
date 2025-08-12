@@ -5,8 +5,19 @@ Somos um capítulo estudantil vinculado à IEEE, a maior organização profissio
 Sejam bem vindos, aqui estarão presentes todos os arquivos referentes aos períodos do processo Trainee do CIS!
 
 ---
-<!-- 1  Período -->
-# 📅 1º Período — Regressão e Classificação (05/05 – 12/05)
+# Sumário
+
+
+- [1º Período — Regressão e Classificação](#1o-periodo-regressao-e-classificacao-0505--1205)  
+- [2º Período — Clusterização](#2o-periodo-clusterizacao-1205--1905)  
+- [3º Período — Redes Neurais](#3o-periodo-redes-neurais)  
+- [4º Período — Visão Computacional](#4o-periodo-visao-computacional-0306--1006)  
+- [5º Período — Apresentações](#5o-periodo-apresentacoes-0206--0906)
+
+---
+
+<!-- 1º Período -->
+# 📅 1 Período — Regressão e Classificação (05/05 – 12/05)
 
 ## 📌 Regressão Linear
 - **Objetivo:** prever valores contínuos.
@@ -46,7 +57,7 @@ Sejam bem vindos, aqui estarão presentes todos os arquivos referentes aos perí
 ---
 
 <!-- 2  Período -->
-# 📅 2º Período — Clusterização (12/05 – 19/05)
+# 📅 2o Periodo - Clusterizacao (12/05 – 19/05)
 
 ### 📌 Aprendizado Supervisionado vs. Não Supervisionado
 
@@ -143,15 +154,70 @@ Sejam bem vindos, aqui estarão presentes todos os arquivos referentes aos perí
 ### 📝 Link do Desafio  
 - [Desafio de Redes Neurais](3_Período/Atividade.pdf)
 
-# 4º Período: Visão Computacional (03/06-10/06)
+--- 
+# 📅 4º Período — Visão Computacional (03/06 – 10/06)
 
-### Aula
-- [Slides Redes Neurais Convolucionais](4_Período/aulão_cnn.pdf)
-- [Notebook Aplicação de Método Multiclasse](4_Período/clouds.ipynb)
-- [Extras Sobre Utilização](4_Período/multiclass.pdf)
-- [Notebook de Extras Sobre Utilização](4_Período/more_examples.ipynb)
+### 📌 O que são Redes Neurais Convolucionais (CNNs)?
 
-### Desafios
+- Algoritmos de aprendizado profundo especializados em reconhecimento de objetos.  
+- Aplicações: classificação de imagens, detecção de objetos, segmentação, veículos autônomos, sistemas de segurança, etc.  
+- Inspiradas no córtex visual humano, com arquitetura hierárquica e conectividade local.  
+
+---
+
+### 📌 Componentes Principais das CNNs
+
+1. **Camadas Convolucionais:** Aplicam filtros (kernels) para extrair padrões locais (bordas, formas).  
+2. **Função de Ativação (ReLU):** Introduz não-linearidade e ajuda a aprender padrões complexos.  
+3. **Camadas de Pooling:** Reduzem a dimensionalidade, destacando características importantes e ajudando a evitar overfitting.  
+4. **Camadas Totalmente Conectadas:** Realizam a classificação final, geralmente usando Softmax para gerar probabilidades.  
+
+---
+
+### 📌 Overfitting e Regularização
+
+- **Overfitting:** Quando o modelo decora os dados de treino, mas falha em generalizar.  
+- **Técnicas para mitigar:**  
+  - Dropout  
+  - Batch Normalization  
+  - Early Stopping  
+  - Data Augmentation  
+  - Regularização L1 e L2  
+
+---
+
+### 📌 Aplicações Práticas
+
+- Classificação e organização automática de imagens.  
+- Detecção e localização de objetos em imagens.  
+- Reconhecimento facial para segurança.  
+- Veículos autônomos e diagnóstico médico.  
+
+---
+
+### 📌 Frameworks Populares
+
+- **TensorFlow:** Ferramenta completa para desenvolvimento e deploy.  
+- **Keras:** Interface simples para prototipagem rápida, roda sobre TensorFlow.  
+- **PyTorch:** Popular por seu grafo dinâmico e uso em pesquisa.  
+
+---
+
+### 📚 Materiais e Recursos
+
+- [Slides Redes Neurais Convolucionais](4_Período/aulão_cnn.pdf)  
+- [Notebook Aplicação Multiclasse](4_Período/clouds.ipynb)  
+- [Extras sobre Utilização](4_Período/multiclass.pdf)  
+- [Notebook Extras](4_Período/more_examples.ipynb)  
+
+---
+
+### 📝 Desafio — 4º Período: CNNs
+
+- Implementar e treinar CNN para tarefas de visão computacional.  
+- Explorar camadas convolucionais, pooling, ativação e regularização.  
+- Aplicar técnicas para evitar overfitting.  
+- Utilizar frameworks como TensorFlow, Keras ou PyTorch.
+
 - [Desafio de Redes Neurais Convolucionais](4_Período/Atividade.pdf)
-
 # 5º Período: Apresentações (02/06-09/06)
