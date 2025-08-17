@@ -220,4 +220,20 @@ Sejam bem vindos, aqui estarão presentes todos os arquivos referentes aos perí
 - Utilizar frameworks como TensorFlow, Keras ou PyTorch.
 
 - [Desafio de Redes Neurais Convolucionais](4_Período/Atividade.pdf)
-# 5º Período: Apresentações (02/06-09/06)
+# 📅 5º Período — Apresentações (02/06 – 09/06)
+
+Nesta etapa, os grupos apresentam um modelo de IA, mostrando todo o aprendizado adquirido nos períodos anteriores. É o momento de **compartilhar conhecimento, resultados e experiências.**
+
+
+## 🎯 Objetivos das Apresentações
+
+- **Comunicar ideias com clareza:** Explicar conceitos e processos de forma objetiva e compreensível.  
+- **Demonstrar aplicações práticas:** Mostrar como os modelos estudados podem ser aplicados em situações reais.  
+- **Analisar criticamente:** Apontar pontos fortes, limitações e possíveis melhorias do modelo ou abordagem.  
+- **Engajar o público:** Incentivar perguntas, reflexões e discussões construtivas.  
+
+
+
+## 💡 Importância desta etapa
+
+O 5º período é o **clímax do ciclo de aprendizado**, permitindo que cada grupo **sintetize e compartilhe todo o conhecimento adquirido**, além de exercitar habilidades essenciais de comunicação, trabalho em equipe e análise crítica de modelos de Inteligência Artificial e aprendizado de máquina.
