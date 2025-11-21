@@ -1,4 +1,4 @@
-# Curso Avançado de IA Aplicada à Química - IEEE UnB CIS / CCET UEG Lab MPhysChem 🧪🤖
+# Curso Avançado de IA Aplicada à Química <br> IEEE UnB CIS / CCET UEG Lab MPhysChem 🧪🤖
 
 Bem-vindos ao repositório oficial do **Curso Avançado de IA Aplicada à Química**! Aqui você encontrará todos os materiais, notebooks e exercícios referentes aos 4 dias de imersão em deep learning para descoberta e design molecular.
 
