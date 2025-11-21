@@ -1,239 +1,230 @@
-# Processo Trainee - IEEE CIS Chapter Universidade de Brasília 🚀
+# Curso Avançado de IA Aplicada à Química - IEEE UnB CIS / CCET UEG Lab MPhysChem 🧪🤖
 
-Somos um capítulo estudantil vinculado à IEEE, a maior organização profissional do mundo dedicada ao avanço da tecnologia em benefício da humanidade. Nosso objetivo é capacitar estudantes na área de inteligência computacional e inteligência artificial e democratizar o conhecimento. 🎯
+Bem-vindos ao repositório oficial do **Curso Avançado de IA Aplicada à Química**! Aqui você encontrará todos os materiais, notebooks e exercícios referentes aos 4 dias de imersão em deep learning para descoberta e design molecular.
 
-Sejam bem vindos, aqui estarão presentes todos os arquivos referentes aos períodos do processo Trainee do CIS!
+## Objetivo do Curso
 
----
-# Sumário
+Capacitar químicos e pesquisadores na utilização de técnicas avançadas de machine learning e deep learning para:
+- Predição de propriedades moleculares
+- Descoberta de novos compostos químicos
+- Otimização de reações e processos
+- Aplicação de Graph Neural Networks (GNNs) em química computacional
 
+## Sumário
 
-- [1º Período — Regressão e Classificação](#1o-periodo-regressao-e-classificacao-0505--1205)  
-- [2º Período — Clusterização](#2o-periodo-clusterizacao-1205--1905)  
-- [3º Período — Redes Neurais](#3o-periodo-redes-neurais)  
-- [4º Período — Visão Computacional](#4o-periodo-visao-computacional-0306--1006)  
-- [5º Período — Apresentações](#5o-periodo-apresentacoes-0206--0906)
-
----
-
-<!-- 1º Período -->
-# 📅 1 Período — Regressão e Classificação (05/05 – 12/05)
-
-## 📌 Regressão Linear
-- **Objetivo:** prever valores contínuos.
-- **MSE** 🟦: erro médio ao quadrado, sensível a outliers.
-- **MAE** 🟩: erro médio absoluto, menos sensível a outliers.
-- **Uso:** MSE penaliza mais erros grandes; MAE mostra erro médio real.
-
-## 📌 Classificação
-- **Definição:** prever categorias a partir de dados.
-- **Exemplo:** e-mails *spam* ou *não spam*.
-- **Lazy Learners** 🐢: memorizam dados; adaptação rápida; predição lenta.
-- **Eager Learners** 🚀: criam modelo; predição rápida; menos adaptáveis.
-
-## 📌 Métricas de Classificação
-- **Acurácia** 📊: % de acertos (bom p/ dados balanceados).
-- **Precisão** 🎯: positivos corretos / previstos positivos.
-- **Recall** 🔍: positivos encontrados / positivos reais.
-- **F1-score** ⚖️: equilíbrio entre precisão e recall.
-
-### 📂 Aula
-- [Slides](1_Período/Apresentacao.pdf)
-
-#### 📝 Desafio de Regressão — Wine Quality  
-- **Objetivo:** Criar um modelo de regressão para prever a qualidade do vinho verde (variedade vermelha ou branca) com base em dados químicos (ex.: acidez, pH, álcool).  
-- **Dados:** 11 atributos químicos; variável alvo: qualidade (score 0-10).  
-- **Entrega:** Individual, no GitHub pessoal.  
-- [Atividade Completa](1_Período/Atividade_regrecao.pdf)
+- [Dia 1](#dia-1)
+- [Dia 2](#dia-2)
+- [Dia 3 — Graph Neural Networks e Message Passing Neural Networks](#dia-3--graph-neural-networks-e-message-passing-neural-networks)
+- [Dia 4](#dia-4)
+- [Trabalho Final](#trabalho-final)
 
 ---
 
-#### 📝 Desafio de Classificação — Census Income  
-- **Objetivo:** Construir modelos de classificação binária para prever se a renda anual de um indivíduo é maior que US$ 50.000.  
-- **Dados:** 48.842 registros com 14 atributos demográficos e socioeconômicos (idade, educação, ocupação, etc.).  
-- **Tarefas obrigatórias:** Treinar Árvore de Decisão e Random Forest; avaliar com acurácia, precisão, recall e F1; gerar matriz de confusão e gráfico de importância.  
-- **Tarefas opcionais:** Análise exploratória, validação cruzada e redução de dimensionalidade.  
-- [Atividade Completa](1_Período/Atividade_classificacao.pdf)
----
+<!-- Dia 1 -->
+<a name="dia-1"></a>
+# 📅 Dia 1
 
-<!-- 2  Período -->
-# 📅 2o Periodo - Clusterizacao (12/05 – 19/05)
-
-### 📌 Aprendizado Supervisionado vs. Não Supervisionado
-
-- **Supervisionado:** Prever classe (classificação) ou valor contínuo (regressão) usando dados rotulados.  
-- **Não Supervisionado:** Descobrir padrões e agrupar dados não rotulados, como em clusterização.
 
 ---
 
-### 📌 O que é Clusterização?
+<!-- Dia 2 -->
+<a name="dia-2"></a>
+# 📅 Dia 2
 
-- Técnica de aprendizado **não supervisionado** que agrupa dados semelhantes em **clusters**.  
-- 🎯 **Objetivo:** Maximizar a similaridade dentro dos grupos e minimizar entre grupos diferentes.
 
 ---
 
-### 📌 Por que usar Clusterização?
+<!-- Dia 3 -->
+<a name="dia-3"></a>
+# 📅 Dia 3 — Graph Neural Networks e Message Passing Neural Networks
 
-- 🔍 Identificação automática de padrões sem necessidade de supervisão.  
-- 📉 Redução de dimensionalidade e simplificação dos dados.  
-- 🧩 Auxilia na tomada de decisão baseada em agrupamentos.
+## Por que Deep Learning para Química?
 
----
+- Captura relações não-lineares complexas
+- Aprendizado automático de features relevantes
+- Generalização para novos espaços químicos
 
-### 📌 Funcionamento do K-means
+## Moléculas como Grafos
 
-1. 🚀 **Inicialização:** Escolha K centróides aleatórios.  
-2. 🎯 **Atribuição:** Associe cada ponto ao centróide mais próximo.  
-3. 🔄 **Recalcular centróides:** Média dos pontos em cada grupo.  
-4. 🔁 **Repetir:** Até os centróides não mudarem (convergência).
+**Representação estrutural:**
+- **Vértices (Nodes):** Átomos (tipo, carga, hibridização)
+- **Arestas (Edges):** Ligações químicas (ordem, tipo)
+- **SMILES → Grafo:** Conversão usando RDKit
 
----
+## Message Passing Neural Networks (MPNNs)
 
-### 📌 Outros pontos Importantes
+**Conceito:** Propagação de informações entre átomos vizinhos → Agregação de mensagens locais → Representação molecular global
 
-- 📊 **Inércia:** Mede a qualidade dos clusters; valores menores indicam clusters mais compactos.  
-- 🔢 **Número ideal de clusters:** Determinado por análise da inércia ou métodos específicos.  
-- ⚙️ Existem outros modelos de clusterização além do K-means.
+**Arquitetura D-MPNN:**
+1. Codificação inicial de features
+2. Message Passing dirigido (baseado em ligações)
+3. Agregação (pooling)
+4. Predição via rede feed-forward
 
----
+**Vantagens:**
+- Evita "totters" (loops desnecessários)
+- Maior estabilidade numérica
+- Melhor captura de informações direcionais
 
-### 📚 Aula
-- [Slides do Segundo Período](2_Período/Apresentacao.pdf)
+## Arquiteturas GNN
 
-### 📝 Desafio — 2º Período: Clusterização
+- **MPNN:** Base para arquiteturas modernas
+- **GCN:** Convolução em grafos
+- **GAT:** Mecanismos de atenção
+- **SchNet:** Features 3D (distâncias interatômicas)
+- **DimeNet:** Ângulos diedrais
 
-- 🚀 Implementar K-Means do zero em Python.  
-- 📊 Analisar *Student Habits vs Academic Performance*: levantar hipóteses, fazer EDA e revisar com resultados.  
-- 🔢 Justificar o número de clusters (K).  
-- 📚 Opcional: pesquisar DBSCAN, Hierarchical Clustering e algoritmo avançado.
+**Formalização matemática:**
+```
+Fase de Mensagem: m_ij = φ(h_i, h_j, e_ij)
+Fase de Agregação: h_i' = γ(h_i, Σ_{j∈N(i)} m_ij)
+```
 
-> 💡 *Dica:* “Se você torturar os dados por tempo suficiente, eles confessarão.”  
-- [Desafio de Clusterização](2_Período/Atividade.pdf)
+## GNNs vs. Métodos Tradicionais
 
---- 
-<!-- 3  Período -->
-# 📅 3º Período — Redes Neurais
+| Aspecto | Fingerprints + ML | D-MPNN/GNN |
+|---------|-------------------|------------|
+| **Features** | Fixas, pré-definidas | Aprendidas automaticamente |
+| **Generalização** | Limitada | Melhor para novos scaffolds |
+| **Dados necessários** | Poucos | Datasets maiores |
+| **Interpretabilidade** | Alta | Moderada (attention) |
+| **Performance** | Boa (tarefas simples) | Superior (tarefas complexas) |
 
-### 📌 O que são Redes Neurais?
+## Chemprop
 
-- Inspiradas no cérebro humano para aprender padrões complexos.  
-- Usadas em reconhecimento de imagem, tradução, previsão, entre outros.  
-- Não "pensam", mas capturam relações complexas nos dados.
+- Implementação otimizada de D-MPNNs
+- Interface simplificada para químicos
+- Transfer learning, ensemble, interpretabilidade
 
----
+## Aplicações Reais
 
-### 📌 Conteúdos Principais
+1. **Descoberta de Antibióticos:** Halicin (D-MPNN contra *E. coli* resistente)
+2. **Propriedades Quânticas:** Aceleração de cálculos DFT
+3. **Síntese Retrossintética:** Planejamento de rotas sintéticas
 
-- Perceptron, funções de ativação, pesos e bias.  
-- Feedforward, backpropagation e gradiente descendente.  
-- Função de custo, métricas de avaliação.  
-- Overfitting, underfitting, regularização e otimização.  
-- Implementação prática com TensorFlow e PyTorch.
+## Técnicas
 
----
+- **Transfer Learning:** Pré-treino + fine-tuning
+- **Representação Híbrida:** GNN + descritores RDKit
+- **Ensemble Methods:** Agregação de múltiplos modelos
+- **Uncertainty Quantification:** Confiança nas predições
 
-### 📌 Base de Dados
+## Frameworks
 
-- Stellar Classification Dataset (galáxias, quasares e estrelas) do Kaggle.
-
----
-
-### 📝 Desafio — 3º Período: Redes Neurais
-
-- 🛠️ Construir uma rede neural para classificar galáxias, quasares e estrelas.  
-- ⚙️ Testar variações na arquitetura, épocas e learning rate.  
-- 🔎 Identificar overfitting e underfitting, aplicando regularização.  
-- 💡 Opcional: criar rede neural “from scratch” em Python e testar outros datasets via Keras.
-
----
-
-### 📚 Aula  
-- [Slides do Terceiro Período](3_Período/Apresentacao.pdf)
-
-### 📝 Link do Desafio  
-- [Desafio de Redes Neurais](3_Período/Atividade.pdf)
-
---- 
-# 📅 4º Período — Visão Computacional (03/06 – 10/06)
-
-### 📌 O que são Redes Neurais Convolucionais (CNNs)?
-
-- Algoritmos de aprendizado profundo especializados em reconhecimento de objetos.  
-- Aplicações: classificação de imagens, detecção de objetos, segmentação, veículos autônomos, sistemas de segurança, etc.  
-- Inspiradas no córtex visual humano, com arquitetura hierárquica e conectividade local.  
+- **PyTorch Geometric (PyG):** Modular, flexível
+- **DGL:** Escalável, TensorFlow/PyTorch
+- **Chemprop:** Especializado em química, estado-da-arte
 
 ---
 
-### 📌 Componentes Principais das CNNs
+## 📚 Materiais do Dia 3
 
-1. **Camadas Convolucionais:** Aplicam filtros (kernels) para extrair padrões locais (bordas, formas).  
-2. **Função de Ativação (ReLU):** Introduz não-linearidade e ajuda a aprender padrões complexos.  
-3. **Camadas de Pooling:** Reduzem a dimensionalidade, destacando características importantes e ajudando a evitar overfitting.  
-4. **Camadas Totalmente Conectadas:** Realizam a classificação final, geralmente usando Softmax para gerar probabilidades.  
+- [Slides - GNNs e MPNNs](Dia_3/slides_gnns_mpnn.pdf)
+- [Notebook - Construindo Grafos Moleculares](Dia_3/grafos_moleculares.ipynb)
+- [Notebook - Treinando D-MPNN](Dia_3/treinando_dmpnn.ipynb)
+- [Notebook - PyTorch Geometric](Dia_3/gnn_pyg.ipynb)
+- [Notebook - Transfer Learning](Dia_3/transfer_learning.ipynb)
+- [Notebook - Análise de Atenção](Dia_3/attention_analysis.ipynb)
+- [Tutorial Chemprop](Dia_3/tutorial_chemprop.pdf)
+- [Paper: Halicin Discovery](Dia_3/papers/halicin_discovery.pdf)
 
----
+## 📝 Exercício para Casa — Dia 3
 
-### 📌 Overfitting e Regularização
+**Objetivo:** Pipeline completo de GNN para descoberta de inibidores enzimáticos.
 
-- **Overfitting:** Quando o modelo decora os dados de treino, mas falha em generalizar.  
-- **Técnicas para mitigar:**  
-  - Dropout  
-  - Batch Normalization  
-  - Early Stopping  
-  - Data Augmentation  
-  - Regularização L1 e L2  
+**Dataset:** Inibidores de protease (fornecido)
 
----
+**Tarefas:**
+1. **Exploração:** Análise do espaço químico, scaffolds, distribuição de atividades
+2. **Modelagem:** D-MPNN base, representação híbrida, transfer learning
+3. **Avaliação:** Split por scaffold, comparação com baseline (RF + Morgan)
+4. **Interpretabilidade:** Attention weights, features importantes
+5. **Virtual Screening:** Ranquear candidatos, análise de diversidade
 
-### 📌 Aplicações Práticas
+**Desafio Extra:** Implementar GNN do zero (PyTorch) e comparar com Chemprop
 
-- Classificação e organização automática de imagens.  
-- Detecção e localização de objetos em imagens.  
-- Reconhecimento facial para segurança.  
-- Veículos autônomos e diagnóstico médico.  
-
----
-
-### 📌 Frameworks Populares
-
-- **TensorFlow:** Ferramenta completa para desenvolvimento e deploy.  
-- **Keras:** Interface simples para prototipagem rápida, roda sobre TensorFlow.  
-- **PyTorch:** Popular por seu grafo dinâmico e uso em pesquisa.  
+- [📄 Exercício Completo](Dia_3/exercicio_inibidores.pdf)
+- [📦 Dataset](Dia_3/dataset_inibidores.zip)
 
 ---
 
-### 📚 Materiais e Recursos
+<!-- Dia 4 -->
+<a name="dia-4"></a>
+# 📅 Dia 4
 
-- [Slides Redes Neurais Convolucionais](4_Período/aulão_cnn.pdf)  
-- [Notebook Aplicação Multiclasse](4_Período/clouds.ipynb)  
-- [Extras sobre Utilização](4_Período/multiclass.pdf)  
-- [Notebook Extras](4_Período/more_examples.ipynb)  
 
 ---
 
-### 📝 Desafio — 4º Período: CNNs
+<!-- Trabalho Final -->
+<a name="trabalho-final"></a>
+# Trabalho Final
 
-- Implementar e treinar CNN para tarefas de visão computacional.  
-- Explorar camadas convolucionais, pooling, ativação e regularização.  
-- Aplicar técnicas para evitar overfitting.  
-- Utilizar frameworks como TensorFlow, Keras ou PyTorch.
+### 1. GNNs para Cálculos Quânticos (QM/ML)
 
-- [Desafio de Redes Neurais Convolucionais](4_Período/Atividade.pdf)
-# 📅 5º Período — Apresentações (02/06 – 09/06)
+**Potenciais de ML:** ANI, SchNet, PhysNet, PaiNN  
+**Framework MLatomom:** Integração com Gaussian/ORCA/Psi4  
+**Aplicação:** Setup no cluster UEG, comparação QM vs. QM/ML
 
-Nesta etapa, os grupos apresentam um modelo de IA, mostrando todo o aprendizado adquirido nos períodos anteriores. É o momento de **compartilhar conhecimento, resultados e experiências.**
+### 2. Generative Models para Design Molecular
+
+**Abordagens:** VAE, GAN, Reinforcement Learning, Diffusion Models  
+**Graph-based Generation:** Geração sequencial garantindo valência química
+
+## Projeto Final em Grupo
+
+**Formação:** Grupos de 2-3 pessoas
+
+### Opção 1: Descoberta de Moléculas Bioativas
+Identificar potenciais inibidores para alvo terapêutico específico.
+
+**Entregáveis:** Código completo, relatório (10-15 páginas), top 20 candidatos, apresentação (15 min)
+
+### Opção 2: Predição de Propriedades Físico-Químicas
+Criar modelo robusto para propriedades como solubilidade, LogP, toxicidade.
+
+**Entregáveis:** Código documentado, benchmark comparativo, análise de features, modelo treinado
+
+### Opção 3: Módulo de Predição para Transitivity 2.0
+Desenvolver funcionalidade GNN para o sistema (predição de energia, reatividade, produtos, screening).
+
+**Entregáveis:** Código + API, documentação de integração, testes de performance
+
+### Opção 4: Projeto Livre
+Proposta própria envolvendo GNNs aplicadas à química (espectros, síntese retrossintética, catalisadores, materiais).
 
 
-## 🎯 Objetivos das Apresentações
+## Recursos
 
-- **Comunicar ideias com clareza:** Explicar conceitos e processos de forma objetiva e compreensível.  
-- **Demonstrar aplicações práticas:** Mostrar como os modelos estudados podem ser aplicados em situações reais.  
-- **Analisar criticamente:** Apontar pontos fortes, limitações e possíveis melhorias do modelo ou abordagem.  
-- **Engajar o público:** Incentivar perguntas, reflexões e discussões construtivas.  
+**Datasets:** MoleculeNet, ChEMBL, PubChem, ZINC15, QM9  
+**Ferramentas:** RDKit, Chemprop, PyTorch Geometric, DeepChem, MLatomom  
+**Suporte:** Discord/Slack IEEE CIS, office hours, acesso cluster UEG
+
+**Materiais:**
+- [Slides - QM/ML e Generative Models](Trabalho_Final/slides_topicos_avancados.pdf)
+- [Notebook - MLatomom Tutorial](Trabalho_Final/mlatom_tutorial.ipynb)
+- [Notebook - Generative VAE](Trabalho_Final/molecular_vae.ipynb)
+- [Template de Projeto](Trabalho_Final/template_projeto.md)
+- [Guia de Boas Práticas](Trabalho_Final/boas_praticas_ml_quimica.pdf)
+
+---
+
+## Referências
+
+**Papers:**
+1. Stokes et al. (2020) - "A Deep Learning Approach to Antibiotic Discovery"
+2. Yang et al. (2019) - "Analyzing Learned Molecular Representations for Property Prediction"
+3. Gilmer et al. (2017) - "Neural Message Passing for Quantum Chemistry"
+4. Wieder et al. (2020) - "A compact review of molecular property prediction with GNNs"
+
+**Livros:**
+- "Deep Learning for the Life Sciences" - Ramsundar et al.
+- "Machine Learning in Chemistry" - Engkvist et al.
+
+**Tutoriais:**
+- [DeepChem](https://deepchem.io/)
+- [PyTorch Geometric](https://pytorch-geometric.readthedocs.io/)
+- [Chemprop](https://chemprop.readthedocs.io/)
+- [RDKit Cookbook](https://www.rdkit.org/docs/Cookbook.html)
 
 
-
-## 💡 Importância desta etapa
-
-O 5º período é o **clímax do ciclo de aprendizado**, permitindo que cada grupo **sintetize e compartilhe todo o conhecimento adquirido**, além de exercitar habilidades essenciais de comunicação, trabalho em equipe e análise crítica de modelos de Inteligência Artificial e aprendizado de máquina.
+**Bom curso a todos! 🧪**
