@@ -31,9 +31,53 @@ Capacitar químicos e pesquisadores na utilização de técnicas avançadas de m
 <a name="dia-2"></a>
 # 📅 Dia 2
 
+## 📂 Detalhes dos Módulos
+
+### 1. [Módulo 1] Coleta e Manipulação de Dados 🧬
+**Foco:** O "Hello World" da Química Digital.
+Aprendemos a transformar nomes de remédios em estruturas manipuláveis pelo computador.
+* **Principais Tópicos:**
+    * Uso do **PubChemPy** para baixar estruturas químicas automaticamente.
+    * Manipulação de objetos `Mol` com **RDKit**.
+    * Cálculo de propriedades físico-químicas (Peso Molecular, LogP, Doadores/Aceitadores de H).
+    * Aplicação prática da **Regra dos 5 de Lipinski** para avaliar candidatos a fármacos orais.
+
+### 2. [Módulo 2] Representação Molecular e Similaridade 🔍
+**Foco:** Traduzindo Química para Matemática.
+Como o computador "enxerga" uma molécula? Transformamos desenhos em vetores numéricos.
+* **Principais Tópicos:**
+    * Geração de **Morgan Fingerprints** (ECFP4) para capturar subestruturas químicas.
+    * Entendimento de vetores de bits (0s e 1s).
+    * Cálculo de **Similaridade de Tanimoto**: comparando o quão parecidas duas moléculas são matematicamente.
+    * Matriz de Distância para agrupar moléculas similares.
+
+### 3. [Módulo 3] Machine Learning I: Regressão (Solubilidade) 💧
+**Foco:** Prevendo números exatos ($\Delta G_{solv}$).
+Construção de um modelo para prever a Energia de Solvatação (o quão solúvel uma molécula é).
+* **Pipeline:**
+    * Limpeza de dados com `SaltRemover` (removendo íons e impurezas).
+    * Divisão de dados (Treino vs Teste).
+    * Treinamento de **Regressão Linear**.
+    * Avaliação com **RMSE** (Raiz do Erro Quadrático Médio) e gráficos de dispersão.
+
+### 4. [Módulo 4] Machine Learning II: Classificação (Anti-HIV) 🦠
+**Foco:** Triagem Virtual (Sim/Não).
+O desafio final: identificar moléculas ativas contra o HIV em um dataset desbalanceado.
+* **Pipeline:**
+    * Análise de desbalanceamento de classes (Ativos vs Inativos).
+    * Treinamento de **Random Forest** com pesos ajustados (`class_weight='balanced'`).
+    * Avaliação avançada: Por que a Acurácia engana? Uso de **Matriz de Confusão, Precision, Recall e Curva ROC-AUC**.
 
 ---
 
+## 🛠️ Ferramentas Utilizadas
+* **Linguagem:** Python 3
+* **Quimioinformática:** RDKit, PubChemPy
+* **Data Science:** Pandas, Numpy
+* **Machine Learning:** Scikit-Learn
+* **Visualização:** Matplotlib, Seaborn
+
+---
 <!-- Dia 3 -->
 <a name="dia-3"></a>
 # 📅 Dia 3 — Graph Neural Networks e Message Passing Neural Networks
