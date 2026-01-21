@@ -77,7 +77,10 @@ O desafio final: identificar moléculas ativas contra o HIV em um dataset desbal
 ---
 
 ## 📚 Materiais do Dia 2
-
+- [Slides - Módulo 1: Coleta de Dados e Lipinski](Dia_2/Slides_Modulo1.pdf)
+- [Notebook - Módulo 1: PubChem e Manipulação de Dados](Dia_2/Modulo1_Dados.ipynb)
+- [Slides - Módulo 2: Representação Molecular](Dia_2/Slides_Modulo2.pdf)
+- [Notebook - Módulo 2: Fingerprints e Similaridade](Dia_2/Modulo2_Fingerprints.ipynb)
 - [Slides - Módulo 3: Regressão e Solubilidade](Dia_2/Slides_Modulo3.pdf)
 - [Notebook - Módulo 3: Prática de Solvatação (Regressão)](Dia_2/Modulo3_Regressao.ipynb)
 - [Slides - Módulo 4: Classificação e Triagem Virtual](Dia_2/Slides_Modulo4.pdf)
