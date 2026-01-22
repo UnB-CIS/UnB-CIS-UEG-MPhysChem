@@ -13,7 +13,7 @@ Capacitar químicos e pesquisadores na utilização de técnicas avançadas de m
 ## Sumário
 
 - [Dia 1](#dia-1)
-- [Dia 2](#dia-2)
+- [Dia 2 - Manipulação de Dados Químicos - Machine Learning - QSAR](#dia-2)
 - [Dia 3 — Deeplearning](#dia-3)
 - [Dia 4 — Graph Neural Networks e Message Passing Neural Networks](#dia-4--graph-neural-networks-e-message-passing-neural-networks)
 - [Trabalho Final](#trabalho-final)
