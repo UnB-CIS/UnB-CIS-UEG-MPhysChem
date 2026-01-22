@@ -14,8 +14,8 @@ Capacitar químicos e pesquisadores na utilização de técnicas avançadas de m
 
 - [Dia 1](#dia-1)
 - [Dia 2](#dia-2)
-- [Dia 3 — Graph Neural Networks e Message Passing Neural Networks](#dia-3--graph-neural-networks-e-message-passing-neural-networks)
-- [Dia 4 — ](#dia-4)
+- [Dia 3 — Deeplearning](#dia-3)
+- [Dia 4 — Graph Neural Networks e Message Passing Neural Networks](#dia-4--graph-neural-networks-e-message-passing-neural-networks)
 - [Trabalho Final](#trabalho-final)
 
 ---
@@ -87,7 +87,32 @@ O desafio final: identificar moléculas ativas contra o HIV em um dataset desbal
 - [Notebook - Módulo 4: Desafio Anti-HIV (Random Forest)](Dia_2/Modulo4_HIV.ipynb)
 <!-- Dia 3 -->
 <a name="dia-3"></a>
-# 📅 Dia 3 — Graph Neural Networks e Message Passing Neural Networks
+# 📅 Dia 3 - DeepLearning
+
+Esta aula apresenta os fundamentos de Redes Neurais Artificiais e conceitos centrais de Deep Learning, conectando teoria e prática. São discutidas arquiteturas clássicas, funções essenciais do treinamento e uma introdução a modelos generativos, com foco especial em Autoencoders e Variational Autoencoders (VAE).
+
+### Conteúdos Abordados
+- Redes Neurais Artificiais
+- Estrutura de uma rede neural
+- Neurônio artificial
+- Funções de ativação (incluindo Softmax)
+- Função de perda (Loss Function) e seu papel no aprendizado
+- Arquiteturas de Deep Learning
+- MultiLayer Perceptron (MLP)
+- Convolutional Neural Networks (CNN)
+- Modelos Preditivos vs. Generativos
+- Modelagem da distribuição dos dados
+- Embeddings
+- Autoencoders e VAE
+
+### Práticas
+- Construção de uma rede neural para prever a solubilidade de moléculas
+- Implementação de um Autoencoder
+
+
+<!-- Dia 4 -->
+<a name="dia-4"></a>
+# 📅 Dia 4 — Graph Neural Networks e Message Passing Neural Networks
 
 ## Por que Deep Learning para Química?
 
@@ -196,13 +221,6 @@ Fase de Agregação: h_i' = γ(h_i, Σ_{j∈N(i)} m_ij)
 
 - [📄 Exercício Completo](Dia_3/exercicio_inibidores.pdf)
 - [📦 Dataset](Dia_3/dataset_inibidores.zip)
-
----
-
-<!-- Dia 4 -->
-<a name="dia-4"></a>
-# 📅 Dia 4
-
 
 ---
 
