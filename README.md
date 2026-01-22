@@ -15,7 +15,7 @@ Capacitar químicos e pesquisadores na utilização de técnicas avançadas de m
 - [Dia 1](#dia-1)
 - [Dia 2](#dia-2)
 - [Dia 3 — Graph Neural Networks e Message Passing Neural Networks](#dia-3--graph-neural-networks-e-message-passing-neural-networks)
-- [Dia 4](#dia-4)
+- [Dia 4 — ](#dia-4)
 - [Trabalho Final](#trabalho-final)
 
 ---
