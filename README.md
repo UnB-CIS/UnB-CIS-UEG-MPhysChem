@@ -77,14 +77,14 @@ O desafio final: identificar moléculas ativas contra o HIV em um dataset desbal
 ---
 
 ## 📚 Materiais do Dia 2
-- [Slides - Módulo 1: Coleta de Dados e Lipinski](Dia_2/Slides_Modulo1.pdf)
-- [Notebook - Módulo 1: PubChem e Manipulação de Dados](Dia_2/Modulo1_Dados.ipynb)
-- [Slides - Módulo 2: Representação Molecular](Dia_2/Slides_Modulo2.pdf)
-- [Notebook - Módulo 2: Fingerprints e Similaridade](Dia_2/Modulo2_Fingerprints.ipynb)
-- [Slides - Módulo 3: Regressão e Solubilidade](Dia_2/Slides_Modulo3.pdf)
+- [Slides - Módulo 1: Coleta de Dados e Lipinski](2_Dia/Modulo1.pdf)
+- [Notebook - Módulo 1: PubChem e Manipulação de Dados](2_Dia/Modulo_1_dia_2.ipynb)
+- [Slides - Módulo 2: Representação Molecular](2_Dia/Dia2_odulo2.pdf)
+- [Notebook - Módulo 2: Fingerprints e Similaridade](2_Dia/Modulo_2_dia_2.ipynb)
+- [Slides - Módulo 3: Regressão e Solubilidade](2_Dia/dia2_modulo3.pdf)
 - [Notebook - Módulo 3: Prática de Solvatação (Regressão)](Dia_2/Modulo3_Regressao.ipynb)
-- [Slides - Módulo 4: Classificação e Triagem Virtual](Dia_2/Slides_Modulo4.pdf)
-- [Notebook - Módulo 4: Desafio Anti-HIV (Random Forest)](Dia_2/Modulo4_HIV.ipynb)
+- [Slides - Módulo 4: Classificação e Triagem Virtual](2_Dia/dia2_modulo4.pdf)
+- [Notebook - Módulo 4: Desafio Anti-HIV (Random Forest)](2_Dia/Modulo4_Dia2.ipynb)
 <!-- Dia 3 -->
 <a name="dia-3"></a>
 # 📅 Dia 3 - DeepLearning
